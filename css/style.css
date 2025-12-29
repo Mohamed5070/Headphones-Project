@@ -354,18 +354,70 @@ img{
     column-gap: 0.75rem;
 }
 
-/* === service ==== */
+/* === sponser ==== */
 
-.sponser__img{
+
+
+.sponser__container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;  
+      
+}
+
+.sponser__img {
     width: 90px;
+    height: auto;
+    filter: grayscale(1); 
+    opacity: 0.7;
+}
+
+
+@media (max-width: 768px) {
+    .sponser__container {
+        justify-content: center; 
+        gap: 4rem;
+    }
+}
+@media (max-width: 1024px) {
+    .sponser__container {
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+/* .sponser__img{
+    width: 90px;
+   
 }
 
 .sponser__container{
     grid-template-columns: repeat(auto-fit, minmax(120px,1fr));
-    row-gap: 3rem;
-    justify-items: center;
-    align-items: center;
+    row-gap: 4rem;
+    justify-content: center;
 }
+
+@media (max-width: 768px){
+    .sponser__container{
+        grid-template-columns: repeat(2, 1fr); 
+        row-gap: 2rem;
+    }
+}
+
+
+.sponser{
+    display: flex;
+    justify-content: center;
+} */
 
 /* ============== Specs ============= */
 
