@@ -390,35 +390,6 @@ img{
 
 
 
-
-
-
-
-
-/* .sponser__img{
-    width: 90px;
-   
-}
-
-.sponser__container{
-    grid-template-columns: repeat(auto-fit, minmax(120px,1fr));
-    row-gap: 4rem;
-    justify-content: center;
-}
-
-@media (max-width: 768px){
-    .sponser__container{
-        grid-template-columns: repeat(2, 1fr); 
-        row-gap: 2rem;
-    }
-}
-
-
-.sponser{
-    display: flex;
-    justify-content: center;
-} */
-
 /* ============== Specs ============= */
 
 .specs__container{
@@ -458,6 +429,39 @@ img{
     position: absolute;
     top:2rem;
     right: -6rem;
+}
 
+/* ======== Case ======== */
+.case__container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.case__data{
+    padding: 2rem 0;
+    
+}
+
+.case__img{
+    width: 250px;
+    justify-self: center;
+    /* left: -7rem; */
+}
+
+.case__description{
+    margin-bottom: var(--mb-1-5);
+    line-height: var(--text-line-hight);
+}
+
+@media screen and (max-width:767) {
+    .case__container{
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+        text-align: center;
+    }
+     .case__img{
+        width: 200px;
+    }
     
 }
