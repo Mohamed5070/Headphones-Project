@@ -158,7 +158,7 @@ img{
 .header{
     position: fixed;
     top: 0;
-    left: 00;
+    left: 0;
     width: 100%;
     z-index: var(--z-fixed);
     background: transparent;
@@ -210,7 +210,7 @@ img{
         row-gap: 1rem;
     }
     .nav__toggle,
-    .nav__close{
+    .nav__close{ 
         display: block;
     }
 }
@@ -465,3 +465,6 @@ img{
     }
     
 }
+
+/* =========== DISCOUNT ============ */
+
