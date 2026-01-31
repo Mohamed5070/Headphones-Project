@@ -442,6 +442,7 @@ img{
     right: -6rem;
 }
 
+
 /* ======== Case ======== */
 .case__container{
     display: grid;
@@ -457,16 +458,9 @@ img{
 .case__img{
     width: 250px;
     justify-self: center;
-    transition: .7s ease;
     /* left: -7rem; */
 }
 
-.case__img:hover{
-     /* background-color: #511414; */
-    transform: translateY(-15px);
-    box-shadow: 0 8px 20px rgba(172, 172, 174, 0.968);
-    /* font-size: 1rem; */
-}
 
 .case__description{
     margin-bottom: var(--mb-1-5);
@@ -708,7 +702,7 @@ img{
 /* ========== MEDIA QUERIES ========= */
 
 /* MIN DEVICES */
-@media screen and (max-width:340px) {
+@media screen and (max-width:460px) {
     .container{
         margin-left: var(--mb-1);
         margin-right: var(--mb-1);
@@ -737,8 +731,16 @@ img{
     }
 
     .specs__img{
-        width: 200px;
+        width: 300px;
     }
+
+     .specs__container{
+        grid-template-columns: repeat(2 , 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+
+   
     
     .case__container{
         grid-template-columns: .6fr 1fr;
@@ -778,17 +780,14 @@ img{
         left: 0; 
     }
 
-    .sponser__container{
-        /* justify-content: center; 
-        gap: 4rem; */
-        
-          grid-template-columns: repeat(2, 1fr);
-         display: grid;
-         gap: 1rem;
+    .specs__img{
+        position: initial;
     }
 
-    .specs__img{
-        /* left: 12rem; */
+    .specs__container{
+        grid-template-columns: repeat(2 , 1fr);
+        justify-content: center;
+        align-items: center;
     }
 
 }
