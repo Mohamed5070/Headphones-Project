@@ -936,6 +936,10 @@ img{
         justify-content: center;
     }
 
+    .img__footer{
+        width: 5rem;
+    }
+
    
 }
 
@@ -1176,7 +1180,7 @@ img{
     }
 
     .sponser__img {
-    width: 190px;
+    width: 150px;
     height: auto;
     }
 
